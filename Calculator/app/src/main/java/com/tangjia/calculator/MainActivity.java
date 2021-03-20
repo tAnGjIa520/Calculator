@@ -34,12 +34,14 @@ public class MainActivity extends AppCompatActivity {
         map.put(R.id.but_jian,"-");
         map.put(R.id.but_cheng,"*");
         map.put(R.id.but_chu,"/");
+        map.put(R.id.but_doc,".");
     }
-    public void click(View view){
-        int id = view.getId();
+    public void  click(View view){
+
+          int id = view.getId();
         String s = map.get(id);
         Log.i(TAG, "click: "+s);
-        string+=s;
+        string+=s; 
         TextView textView = findViewById(R.id.text);
         textView.setText(string);
     }
